@@ -18,10 +18,28 @@
         </div>
 
         <nav>
-          <a href="#">Home</a>
-          <a href="#">Adega</a>
-          <a href="#">Dicas</a>
-          <a href="#">Contato</a>
+          <ul>
+             <li>
+               <a href="#">Home</a>
+            </li>
+             <li>
+               <a href="#">Adega</a>
+                     <ul class="dropdown">
+                        <li><a href="#">Vinhos</a></li>
+                        <li><a href="#">Vinho por Região</a></li>
+                        <li><a href="#">Promoções</a></li>
+                     </ul>
+            </li>
+             <li>
+               <a href="#">Dicas</a>
+                     <ul class="dropdown">
+                        <li><a href="#">Para Curiosos</a></li>
+                        <li><a href="#">Para Enófilos</a></li>
+                     </ul>
+            </li>
+             <li><a href="#">Contato</a></li>
+             <li><a href="#">Quem Somos</a></li>
+          </ul>
        </nav>
     
     </header>
@@ -32,43 +50,70 @@
       <h2>Viagem Sensorial sem Sair de Casa</h2>
 
       <p class="p-h2"> 
-          Explore vinhos de diferentes regiões e   países, expandindo seus horizontes    gastronômicos.
-      </p>
-
-      <p class="p-h2">
+          Explore vinhos de diferentes regiões e países, expandindo seus horizontes gastronômicos. <br>
           Desfrute da praticidade de receber seus vinhos favoritos no conforto do seu lar.
       </p>
 
       <h2>Brindes à Saúde e Bem-Estar</h2>
 
       <p class="p-h2">
-         Antioxidantes que combatem os radicais livres.
-      </p>
-
-      <p class="p-h2">
-         Propriedades anti-inflamatórias que protegem o coração.
-      </p>
-
-      <p class="p-h2">
+         Antioxidantes que combatem os radicais livres. <br>
+         Propriedades anti-inflamatórias que protegem o coração. <br>
          Melhora na circulação sanguínea e na saúde mental.
       </p>
 
       <h2>Harmonização Perfeita para Cada Ocasião</h2>
 
       <p class="p-h2">
-         Encontre o vinho ideal para harmonizar com seus pratos favoritos, elevando a experiência gastronômica.
-      </p>
-       
-      <p class="p-h2">
+         Encontre o vinho ideal para harmonizar com seus pratos favoritos, elevando a experiência gastronômica. <br>
          Descubra o vinho perfeito para cada momento especial, desde um jantar romântico até um encontro com amigos.
       </p>
+
+      <section class="parallax">
+         <h2>
+            "O vinho é a arte que se pode beber."
+         </h2>
+      </section>
+   
+      <h2 id="h2-somos">
+         Quem Somos
+      </h2>
+       
+      <section class="quem-somos">
+
+            <p>
+               Bem-vindo à Adega, uma história que começou entre os exuberantes vinhedos da Espanha e se expandiu para além das fronteiras, abraçando o encanto da Itália e o calor do Brasil. Desde o nosso humilde início até nos tornarmos uma referência em vinhos finos, cada garrafa conta uma história de paixão, tradição e qualidade incomparável. <br>
+               Na Adega, nossa dedicação à qualidade é inabalável. Desde o vinhedo até a taça, cada etapa do processo é cuidadosamente supervisionada para garantir que apenas o melhor chegue até você. Nosso compromisso com a excelência se estende além do produto, refletindo-se em um atendimento ao cliente excepcional e em relacionamentos duradouros baseados na confiança e na integridade.
+            <p>
+               <img src="imagens/uva8.png" alt="" class="img">
+            <img src="" alt="">
+      </section>
      
     </main>
-  
+     <footer>
+      <h1>Entre em Contato!</h1>
+
+      <h2>Estamos presentes em 3 países!</h2>
+   <div class="contatos" >
+      <div class="form-box">
+         <h2 id="title">Envie sua Mensagem</h2>
+         <form action="" method="get">
+            <input type="text" name="name" placeholder="Seu nome">
+            <input type="tel" name="tel" placeholder="Seu telefone">
+            <input type="email" name="email" placeholder="Seu e-mail">
+
+            <textarea name="message" placeholder="Digite aqui a sua mensagem"></textarea>
+
+            <button type="submit">Enviar</button>
+         </form>
+      </div>
+   </div>
+     </footer>
     <script>
       document.addEventListener('contextmenu', function(event) {
           event.preventDefault(); });
   </script>
+
 
 </body>
 </html>
