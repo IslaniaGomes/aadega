@@ -212,6 +212,10 @@ main h2 {
    margin-left: 130px;
 }
 
+img {
+    pointer-events: none;
+}
+
 #ico {
     width: 25px;
     height: 25px;
