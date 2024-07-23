@@ -334,7 +334,12 @@ footer {
    text-align: center;
    color: #d2cfb0 ;
    padding: 10px;
-   background-color: #840808ea ;
+   background-color: #840808ea;
+}
+
+footer a {
+    text-decoration: none;
+    color:#d2cfb0  ;
 }
 
 
