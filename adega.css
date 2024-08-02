@@ -28,9 +28,10 @@
     list-style: none;
 }
 
-body {
+body, html {
+    max-width: 100vw;
     background-color: black;
-    width: 100vw;
+    overflow-x: hidden;
 }
 
 header {
@@ -98,8 +99,8 @@ div > p {
 nav {
     display: flex;
     justify-content: flex-start;
+    width: 100vw;
     flex-wrap: wrap;
-    width: 100%;
     top: 347px;
     font-family: 'philosopher regular';
     background-color: #630f0ed2;
@@ -146,13 +147,14 @@ ul li:hover ul.dropdown {
 }
 
 main {
-    padding: 60px;
+    padding-top: 5px;
     line-height: 1.8em;
     font-family: 'philosopher regular';
     background-image: url('imagens/fundo-main.jpg');   
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 
 main h1 {
     font-family: 'milton bold';
@@ -166,50 +168,56 @@ main h1 {
 
 main h2 {
     font-family: 'philosopher italic';
-    margin-top: 5px;
-    margin-bottom: 10px;
+    margin:auto;
     text-align: center;
     color: #7c0b0b;
 }
+
+
+#Conheca-adega {
+    padding: 30px;
+ }
 
 .p-h2 {
     text-align: center;
     margin-bottom: 20px;
 }
 
-.parallax {
-    background-image: url('imagens/img-parallax.jpg');
-    width: 100%;
+#parallax {
+    width: 100vw;
     height: 1500px;
-    margin-top: 80px;
-    margin-bottom: 90px;
-    color: white;
-    box-shadow: inset 6px 6px 13px 0px black;
+    background-image: url('imagens/img-parallax.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
     background-position: center;
+    background-size: cover;
     background-attachment: fixed;
+    box-shadow: inset 10px 10px 25px black;
 }
 
-.parallax h2 {
-    font-family: 'milton bold';
-    font-size: 10em;
-    text-align: center;
-    color: white;
-    padding-top: 700px;
+
+#parallax-h2 {
+    padding: 600px 20px;
     text-shadow: 2px 2px 1px #000000bc;
+}
+
+#parallax-h2 h2 {
+    margin: auto;
+    text-align: center;
+    font-family: 'milton bold';
+    font-size: 8em;
+    color: white;
 }
 
 .h2-somos {
     text-align: left;
     margin-top: 130px;
-    margin-left: 130px;
+    padding: 40px;
 }
 
 .quem-somos {
    display: flex;
    justify-content: flex-start;
-   margin-left: 130px;
+   padding: 30px
 }
 
 img {
@@ -340,6 +348,153 @@ footer {
 footer a {
     text-decoration: none;
     color:#d2cfb0  ;
+}
+
+@media screen and (max-width: 576px){
+   
+    
+    header {
+        height: 400px;
+        width: 100%;
+        position: relative;
+        user-select: none;
+    }
+
+
+    .div-adega {
+        height: 300px;
+        width: 300px;
+        margin-top: 30px;
+        margin-left: 2px;
+        padding: 30px;
+        position: absolute;
+    }
+    
+    div > h1 {
+        font-family: 'philosopher bold';
+        font-size: 70px;
+        margin-top: 30px;
+        text-align: left;
+        color: #b20a0a;
+        text-shadow: 2px 2px 2px #00000052;
+    }
+    
+    div > p {
+        font-family:'philosopher italic';
+        font-size: 15px;
+        text-align: left;
+        margin-left: 25px;
+        color: #d2cfb0;
+        text-shadow: 2px 2px 1px #0000004d;
+    }
+
+    nav {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        position: absolute;
+        width: 100%;
+        top: 355px;
+        font-family: 'philosopher regular';
+        background-color: #630f0ef2;
+    }
+    
+    ul li {
+        display: inline-block;
+        position: relative;
+        width:100vw;
+        text-align: center;
+    }
+    
+    ul li a {
+        display: block;
+        text-decoration: none;
+        font-size: 15px;
+        color: #d2cfb0;
+    }
+ 
+    main h1 {
+        font-family: 'milton bold';
+        font-size: 70px;
+        margin-bottom: 90px;
+        margin-top: 220px;
+        line-height: 50px;
+        text-align:center;
+        color: #9e0a0a;
+        text-shadow: 2px 2px 1px #00000027;
+    }
+    
+    main h2 {
+        font-family: 'philosopher italic';
+        margin-top: 5px;
+        margin-bottom: 10px;
+        text-align: center;
+        color: #7c0b0b;
+    }
+
+    #parallax {
+        background-image: url('imagens/img-parallax.jpg');
+        height: 1000px;
+        margin-top: 80px;
+        margin-bottom: 90px;
+        color: white;
+        box-shadow: inset 6px 6px 13px 0px black;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    
+    #parallax-h2 {
+        margin: auto;
+        padding: 400px 20px;
+    }
+
+    #parallax-h2 h2{
+        text-align: center;
+        font-family: 'milton bold';
+        font-size: 6em;
+        line-height: 50px;
+        text-shadow: 2px 2px 1px #000000bc;
+    }
+
+    .quem-somos{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .h2-somos {
+        margin-top: 40px;
+    }
+
+    .contatos h1 {
+        color: #b20a0a;
+        font-size: 40px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .contat-detalhes {
+        text-align: center;
+        color: #590606ea;
+        font-size: 16px;
+        text-shadow: 2px 2px 3px #0000003a;
+    }
+   
+
+    .form-box {
+        display: flex;
+        flex-direction: column;
+        background-color: #630f0ed2;
+        border-radius: 4px;
+        height: 330px;
+        width: 330px;
+        padding: 20px;
+        margin-bottom: 20px; 
+    }
+
+
+    
 }
 
 
