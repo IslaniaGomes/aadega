@@ -173,7 +173,6 @@ main h2 {
     color: #7c0b0b;
 }
 
-
 #Conheca-adega {
     padding: 30px;
  }
@@ -242,13 +241,17 @@ img {
 }
 
 .contatos h1 {
-    color: #b20a0a;
-    font-size: 50px;
+    margin: auto;
     text-align: center;
     margin-bottom: 20px;
+    font-size: 50px;
+    color: #b20a0a;
+   
+    
 }
 
 .contatos p {
+    margin: auto;
     text-align: center;
     padding: 15px;
     color: #b20a0a;
@@ -350,7 +353,7 @@ footer a {
     color:#d2cfb0  ;
 }
 
-@media screen and (max-width: 576px){
+@media screen and (max-width: 576px) {
    
     
     header {
@@ -492,10 +495,155 @@ footer a {
         padding: 20px;
         margin-bottom: 20px; 
     }
-
-
     
 }
 
+@media (min-width: 577px) and (max-width: 992px) {
+
+    header {
+        height: 400px;
+        width: 100%;
+        position: relative;
+        user-select: none;
+    }
+
+
+    .div-adega {
+        height: 320px;
+        width: 600px;
+        margin-top: 30px;
+        margin-left: 30px;
+        padding: 30px;
+        position: absolute;
+    }
+    
+    div > h1 {
+        font-family: 'philosopher bold';
+        font-size: 100px;
+        margin-top: 30px;
+        margin-left: 100px;
+        text-align: left;
+        color: #b20a0a;
+        text-shadow: 2px 2px 2px #00000052;
+    }
+    
+    div > p {
+        font-family:'philosopher italic';
+        font-size: 15px;
+        text-align: left;
+        margin-left: 130px;
+        color: #d2cfb0;
+        text-shadow: 2px 2px 1px #0000004d;
+    }
+
+    nav {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        position: absolute;
+        width: 100%;
+        top: 355px;
+        font-family: 'philosopher regular';
+        background-color: #630f0ef2;
+    }
+    
+    ul li {
+        display: inline-block;
+        position: relative;
+        width:100vw;
+        text-align: center;
+    }
+    
+    ul li a {
+        display: block;
+        text-decoration: none;
+        font-size: 15px;
+        color: #d2cfb0;
+    }
+ 
+    main h1 {
+        font-family: 'milton bold';
+        font-size: 70px;
+        margin-bottom: 90px;
+        margin-top: 220px;
+        line-height: 50px;
+        text-align:center;
+        color: #9e0a0a;
+        text-shadow: 2px 2px 1px #00000027;
+    }
+    
+    main h2 {
+        font-family: 'philosopher italic';
+        margin-top: 5px;
+        margin-bottom: 10px;
+        text-align: center;
+        color: #7c0b0b;
+    }
+
+    #parallax {
+        background-image: url('imagens/img-parallax.jpg');
+        height: 1000px;
+        margin-top: 80px;
+        margin-bottom: 90px;
+        color: white;
+        box-shadow: inset 6px 6px 13px 0px black;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    
+    #parallax-h2 {
+        margin: auto;
+        padding: 400px 20px;
+    
+    }
+
+    #parallax-h2 h2{
+        text-align: center;
+        font-family: 'milton bold';
+        font-size: 6em;
+        line-height: 50px;
+        text-shadow: 2px 2px 1px #000000bc;
+    }
+
+    .quem-somos{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .h2-somos {
+        margin-top: 40px;
+    }
+
+    .contatos h1 {
+        color: #b20a0a;
+        font-size: 40px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .contat-detalhes {
+        text-align: center;
+        color: #590606ea;
+        font-size: 16px;
+        text-shadow: 2px 2px 3px #0000003a;
+    }
+   
+
+    .form-box {
+        display: flex;
+        flex-direction: column;
+        background-color: #630f0ed2;
+        border-radius: 4px;
+        height: 330px;
+        width: 330px;
+        padding: 20px;
+        margin-bottom: 20px; 
+    }
+      
+    
+    
+}
 
 
