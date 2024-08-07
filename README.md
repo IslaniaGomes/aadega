@@ -12,4 +12,4 @@ e elegante,<br>  efeito parallax, e formulário de contato para os visitantes.</
 - Position
 - Media Queries
 
-🍷Acesse aqui para ver [https://islaniagomes.github.io/aadega/](URL)
+🍷Acesse aqui para ver (https://islaniagomes.github.io/aadega/)
